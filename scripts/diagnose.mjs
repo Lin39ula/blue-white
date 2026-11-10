@@ -1,0 +1,1 @@
+import{chromium}from'@playwright/test';let b=await chromium.launch({channel:'chromium',args:['--enable-unsafe-swiftshader','--use-angle=swiftshader']});let p=await b.newPage();await p.goto('http://127.0.0.1:5175/');await p.waitForTimeout(3000);console.log(await p.locator('section').count(),await p.locator('.material').count(),await p.locator('body').innerText());await b.close();

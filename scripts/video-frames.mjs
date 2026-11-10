@@ -1,0 +1,1 @@
+import fs from 'node:fs';import {spawnSync}from'node:child_process';fs.mkdirSync('qa/video-frames',{recursive:true});let exe='node_modules/@ffmpeg-installer/win32-x64/ffmpeg.exe';for(let n of fs.readdirSync('public/videos/web'))spawnSync(exe,['-y','-ss','10','-i','public/videos/web/'+n,'-frames:v','1','qa/video-frames/'+n+'.jpg']);

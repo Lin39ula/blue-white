@@ -1,0 +1,29 @@
+[
+  {
+    "file": "/images/materials/kaolin.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Kaolin.jpg",
+    "download": "https://upload.wikimedia.org/wikipedia/commons/6/61/Kaolin.jpg",
+    "author": "USGS / Mineral Information Institute",
+    "license": "US federal public domain",
+    "changes": "Resized/recompressed; CSS contain; no recoloring",
+    "verified": "2026-11-10"
+  },
+  {
+    "file": "/images/materials/cobalt.jpg",
+    "source": "https://digital.sciencehistory.org/works/soynuj6",
+    "download": "https://digital.sciencehistory.org/downloads/deriv/p6ric6n/download_medium",
+    "author": "Courtesy of Science History Institute",
+    "license": "CC BY 4.0",
+    "changes": "Resized/recompressed; CSS contain; no recoloring",
+    "verified": "2026-11-10"
+  },
+  {
+    "file": "/images/materials/glazing.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Glazing_with_mineral-based,_hand-mixed_glazes_Taiz%C3%A9_pottery_workshop.jpg",
+    "download": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Glazing_with_mineral-based%2C_hand-mixed_glazes_Taiz%C3%A9_pottery_workshop.jpg",
+    "author": "Chriewue / Charlotte Riedl-Wuerfel, tzepottery.com",
+    "license": "CC BY 4.0",
+    "changes": "Resized/recompressed; CSS contain; no recoloring",
+    "verified": "2026-11-10"
+  }
+]

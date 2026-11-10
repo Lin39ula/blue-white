@@ -1,0 +1,1366 @@
+{
+  "errors": [],
+  "console": [
+    {
+      "type": "warning",
+      "message": "[.WebGL-0x555c0039a200]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "message": "[.WebGL-0x555c0039a200]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "message": "[.WebGL-0x555c0039a200]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "message": "[.WebGL-0x555c0039a200]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+    },
+    {
+      "type": "warning",
+      "message": "Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently"
+    }
+  ],
+  "network": [
+    {
+      "url": "http://127.0.0.1:5175/videos/web/%E7%82%BC%E6%B3%A5.mp4",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:5175/videos/web/%E5%A1%91%E5%BD%A2.mp4",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    }
+  ],
+  "http": [],
+  "checks": [
+    {
+      "name": "material 1 loaded",
+      "pass": true
+    },
+    {
+      "name": "material 2 loaded",
+      "pass": true
+    },
+    {
+      "name": "material 3 loaded",
+      "pass": true
+    },
+    {
+      "name": "material deselect",
+      "pass": true
+    },
+    {
+      "name": "artifact 1 loaded",
+      "pass": true
+    },
+    {
+      "name": "artifact 2 loaded",
+      "pass": true
+    },
+    {
+      "name": "artifact 3 loaded",
+      "pass": true
+    },
+    {
+      "name": "artifact 4 loaded",
+      "pass": true
+    },
+    {
+      "name": "artifact 5 loaded",
+      "pass": true
+    },
+    {
+      "name": "artifact 6 loaded",
+      "pass": true
+    },
+    {
+      "name": "artifact 7 loaded",
+      "pass": true
+    },
+    {
+      "name": "artifact 8 loaded",
+      "pass": true
+    },
+    {
+      "name": "artifact keyboard",
+      "pass": true
+    },
+    {
+      "name": "artifact interrupted return visible",
+      "pass": true
+    },
+    {
+      "name": "artifact rapid final selection",
+      "pass": true
+    },
+    {
+      "name": "transition 0->1 settles",
+      "pass": true,
+      "detail": {
+        "position": 0.2985185640288456,
+        "scale": 2.2877797632965327,
+        "camera": 0,
+        "alpha": 0.4703563698137697
+      }
+    },
+    {
+      "name": "transition 1->2 settles",
+      "pass": true,
+      "detail": {
+        "position": 0,
+        "scale": 0.26721076796297316,
+        "camera": 0,
+        "alpha": 0.08536400608451933
+      }
+    },
+    {
+      "name": "transition 2->3 settles",
+      "pass": true,
+      "detail": {
+        "position": 0,
+        "scale": 0,
+        "camera": 0,
+        "alpha": 0.07206565445131485
+      }
+    },
+    {
+      "name": "transition 3->4 settles",
+      "pass": true,
+      "detail": {
+        "position": 0.00011557596304345719,
+        "scale": 0.00004677219431625801,
+        "camera": 0,
+        "alpha": 0
+      }
+    },
+    {
+      "name": "transition 4->5 settles",
+      "pass": true,
+      "detail": {
+        "position": 0,
+        "scale": 0,
+        "camera": 0,
+        "alpha": 0.08380907835428597
+      }
+    },
+    {
+      "name": "transition 5->0 settles",
+      "pass": true,
+      "detail": {
+        "position": 0,
+        "scale": 0,
+        "camera": 0,
+        "alpha": 0
+      }
+    },
+    {
+      "name": "transition 3->2 settles",
+      "pass": true,
+      "detail": {
+        "position": 0.0034411119500047382,
+        "scale": 0.0013925763848439132,
+        "camera": 0,
+        "alpha": 0.003614624839591518
+      }
+    },
+    {
+      "name": "transition 2->1 settles",
+      "pass": true,
+      "detail": {
+        "position": 0.05102478189466453,
+        "scale": 0,
+        "camera": 0,
+        "alpha": 0.025726862258597327
+      }
+    },
+    {
+      "name": "transition 1->0 settles",
+      "pass": true,
+      "detail": {
+        "position": 0.12048711844232507,
+        "scale": 0,
+        "camera": 0,
+        "alpha": 0.060750000000002524
+      }
+    },
+    {
+      "name": "scroll interrupt settles",
+      "pass": true
+    },
+    {
+      "name": "orbit and zoom change camera",
+      "pass": true
+    },
+    {
+      "name": "kneading responds",
+      "pass": true
+    },
+    {
+      "name": "video 1 ready",
+      "pass": true
+    },
+    {
+      "name": "wheel pause",
+      "pass": true
+    },
+    {
+      "name": "video 2 ready",
+      "pass": true
+    },
+    {
+      "name": "video 3 ready",
+      "pass": true
+    },
+    {
+      "name": "painting responds",
+      "pass": true
+    },
+    {
+      "name": "video 4 ready",
+      "pass": true
+    },
+    {
+      "name": "video 5 ready",
+      "pass": true
+    },
+    {
+      "name": "firing completes",
+      "pass": true
+    },
+    {
+      "name": "video 6 ready",
+      "pass": true
+    },
+    {
+      "name": "exit restores original scene",
+      "pass": true
+    },
+    {
+      "name": "mobile 1 no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "mobile 2 no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "mobile 3 no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "mobile 4 no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "mobile 5 no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "mobile 6 no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "mobile video readable",
+      "pass": true
+    },
+    {
+      "name": "no internal UI notes",
+      "pass": true
+    },
+    {
+      "name": "no page errors",
+      "pass": true
+    },
+    {
+      "name": "no HTTP errors",
+      "pass": true
+    }
+  ],
+  "transitions": [
+    {
+      "from": 0,
+      "to": 1,
+      "start": {
+        "chapter": 1,
+        "p": 0,
+        "camera": [
+          0,
+          4.898587196589413e-16,
+          8
+        ],
+        "position": [
+          0.7139977389174496,
+          -0.16527725437903945,
+          0
+        ],
+        "scale": 3.0820933217536473,
+        "rotation": 0.006500000000000001,
+        "alpha": 1,
+        "blocks": 0,
+        "photo": 0,
+        "time": 54521.599999997765,
+        "scroll": 1000,
+        "galleryOpacity": "0"
+      },
+      "middle": {
+        "chapter": 1,
+        "p": 0.731749999999689,
+        "camera": [
+          0,
+          4.898587196589413e-16,
+          8
+        ],
+        "position": [
+          -0.9636782382110919,
+          -0.16527725437903945,
+          0
+        ],
+        "scale": 5.424535063192443,
+        "rotation": 0.10908117828710036,
+        "alpha": 0.48159460612406335,
+        "blocks": 0.5569329623658618,
+        "photo": 0,
+        "time": 56277.699999999255,
+        "scroll": 1000,
+        "galleryOpacity": "0"
+      },
+      "before": {
+        "chapter": 1,
+        "p": 0.7358749999990681,
+        "camera": [
+          0,
+          4.898587196589413e-16,
+          8
+        ],
+        "position": [
+          -0.9708107496021762,
+          -0.16527725437903945,
+          0
+        ],
+        "scale": 5.36987308505018,
+        "rotation": 0.10653571776281884,
+        "alpha": 0.4703563698137697,
+        "blocks": 0.5672721397713318,
+        "photo": 0,
+        "time": 56287.599999997765,
+        "scroll": 1000,
+        "galleryOpacity": "0"
+      },
+      "end": {
+        "chapter": 1,
+        "p": 1,
+        "camera": [
+          0,
+          4.898587196589413e-16,
+          8
+        ],
+        "position": [
+          -1.2693293136310217,
+          -0.16527725437903945,
+          0
+        ],
+        "scale": 3.0820933217536477,
+        "rotation": 0,
+        "alpha": 0,
+        "blocks": 1,
+        "photo": 0,
+        "time": 57627.29999999702,
+        "scroll": 1000,
+        "galleryOpacity": "0"
+      },
+      "settled": {
+        "chapter": 1,
+        "p": 1,
+        "camera": [
+          0,
+          4.898587196589413e-16,
+          8
+        ],
+        "position": [
+          -1.2693293136310217,
+          -0.16527725437903945,
+          0
+        ],
+        "scale": 3.0820933217536477,
+        "rotation": 0,
+        "alpha": 0,
+        "blocks": 1,
+        "photo": 0,
+        "time": 60202.39999999851,
+        "scroll": 1000,
+        "galleryOpacity": "0"
+      },
+      "endpointDelta": {
+        "position": 0.2985185640288456,
+        "scale": 2.2877797632965327,
+        "camera": 0,
+        "alpha": 0.4703563698137697
+      }
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "start": {
+        "chapter": 2,
+        "p": 0,
+        "camera": [
+          0,
+          4.898587196589413e-16,
+          8
+        ],
+        "position": [
+          -1.2693293136310217,
+          -0.16527725437903945,
+          0
+        ],
+        "scale": 3.0820933217536477,
+        "rotation": 0,
+        "alpha": 0,
+        "blocks": 1,
+        "photo": 0,
+        "time": 63272.89999999851,
+        "scroll": 2000,
+        "galleryOpacity": "0"
+      },
+      "middle": {
+        "chapter": 2,
+        "p": 0.6301250000003122,
+        "camera": [
+          0,
+          4.898587196589413e-16,
+          8
+        ],
+        "position": [
+          0.7139977389174496,
+          -0.16527725437903945,
+          0
+        ],
+        "scale": 1.2077388374921396,
+        "rotation": 0,
+        "alpha": 0.4012127250006001,
+        "blocks": 0.4490904562495499,
+        "photo": 0,
+        "time": 64785,
+        "scroll": 2000,
+        "galleryOpacity": "0"
+      },
+      "before": {
+        "chapter": 2,
+        "p": 0.8884583333336415,
+        "camera": [
+          0,
+          4.898587196589413e-16,
+          8
+        ],
+        "position": [
+          0.7139977389174496,
+          -0.16527725437903945,
+          0
+        ],
+        "scale": 2.814882553790674,
+        "rotation": 0,
+        "alpha": 0.9146359939154807,
+        "blocks": 0.06402300456338961,
+        "photo": 0,
+        "time": 65405,
+        "scroll": 2000,
+        "galleryOpacity": "0"
+      },
+      "end": {
+        "chapter": 2,
+        "p": 1,
+        "camera": [
+          0,
+          4.898587196589413e-16,
+          8
+        ],
+        "position": [
+          0.7139977389174496,
+          -0.16527725437903945,
+          0
+        ],
+        "scale": 3.0820933217536473,
+        "rotation": 0.0032500000000000003,
+        "alpha": 1,
+        "blocks": 0,
+        "photo": 0,
+        "time": 65702.39999999851,
+        "scroll": 2000,
+        "galleryOpacity": "0"
+      },
+      "settled": {
+        "chapter": 2,
+        "p": 1,
+        "camera": [
+          0,
+          4.898587196589413e-16,
+          8
+        ],
+        "position": [
+          0.7139977389174496,
+          -0.16527725437903945,
+          0
+        ],
+        "scale": 3.0820933217536473,
+        "rotation": 0.03202549999995157,
+        "alpha": 1,
+        "blocks": 0,
+        "photo": 0,
+        "time": 68182.39999999851,
+        "scroll": 2000,
+        "galleryOpacity": "0"
+      },
+      "endpointDelta": {
+        "position": 0,
+        "scale": 0.26721076796297316,
+        "camera": 0,
+        "alpha": 0.08536400608451933
+      }
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "start": {
+        "chapter": 3,
+        "p": 0,
+        "camera": [
+          0,
+          4.898587196589413e-16,
+          8
+        ],
+        "position": [
+          0.7139977389174496,
+          -0.16527725437903945,
+          0
+        ],
+        "scale": 3.0820933217536473,
+        "rotation": 0.08270599999990318,
+        "alpha": 1,
+        "blocks": 0,
+        "photo": 0,
+        "time": 71305.5,
+        "scroll": 3000,
+        "galleryOpacity": "0"
+      },
+      "middle": {
+        "chapter": 3,
+        "p": 0.5160833333324,
+        "camera": [
+          0,
+          4.898587196589413e-16,
+          8
+        ],
+        "position": [
+          -0.23799924630581681,
+          -0.16527725437903945,
+          0
+        ],
+        "scale": 2.6968316565344415,
+        "rotation": 0,
+        "alpha": 0.9601599476664352,
+        "blocks": 0,
+        "photo": 0.03984005233356475,
+        "time": 72543.69999999925,
+        "scroll": 3000,
+        "galleryOpacity": "0.0398401"
+      },
+      "before": {
+        "chapter": 3,
+        "p": 0.9096666666663527,
+        "camera": [
+          0,
+          4.898587196589413e-16,
+          8
+        ],
+        "position": [
+          -0.23799924630581681,
+          -0.16527725437903945,
+          0
+        ],
+        "scale": 2.6968316565344415,
+        "rotation": 0,
+        "alpha": 0.07206565445131485,
+        "blocks": 0,
+        "photo": 0.9279343455486851,
+        "time": 73488.29999999702,
+        "scroll": 3000,
+        "galleryOpacity": "0.927934"
+      },
+      "end": {
+        "chapter": 3,
+        "p": 1,
+        "camera": [
+          0,
+          4.898587196589413e-16,
+          8
+        ],
+        "position": [
+          -0.23799924630581681,
+          -0.16527725437903945,
+          0
+        ],
+        "scale": 2.6968316565344415,
+        "rotation": 0,
+        "alpha": 0,
+        "blocks": 0,
+        "photo": 1,
+        "time": 73714.79999999702,
+        "scroll": 3000,
+        "galleryOpacity": "1"
+      },
+      "settled": {
+        "chapter": 3,
+        "p": 1,
+        "camera": [
+          0,
+          4.898587196589413e-16,
+          8
+        ],
+        "position": [
+          -0.23799924630581681,
+          -0.16527725437903945,
+          0
+        ],
+        "scale": 2.6968316565344415,
+        "rotation": 0,
+        "alpha": 0,
+        "blocks": 0,
+        "photo": 1,
+        "time": 75171,
+        "scroll": 3000,
+        "galleryOpacity": "1"
+      },
+      "endpointDelta": {
+        "position": 0,
+        "scale": 0,
+        "camera": 0,
+        "alpha": 0.07206565445131485
+      }
+    },
+    {
+      "from": 3,
+      "to": 4,
+      "start": {
+        "chapter": 4,
+        "p": 0,
+        "camera": [
+          0,
+          4.898587196589413e-16,
+          8
+        ],
+        "position": [
+          -0.23799924630581681,
+          -0.16527725437903945,
+          0
+        ],
+        "scale": 2.6968316565344415,
+        "rotation": 0,
+        "alpha": 0,
+        "blocks": 0,
+        "photo": 1,
+        "time": 78039.39999999851,
+        "scroll": 4000,
+        "galleryOpacity": "1"
+      },
+      "middle": {
+        "chapter": 4,
+        "p": 0.49916666666668164,
+        "camera": [
+          0,
+          4.898587196589413e-16,
+          8
+        ],
+        "position": [
+          0.23680925117615656,
+          -0.16527725437903945,
+          0
+        ],
+        "scale": 2.888980912508434,
+        "rotation": 0,
+        "alpha": 0,
+        "blocks": 0,
+        "photo": 0.5012499988425702,
+        "time": 79237.59999999776,
+        "scroll": 4000,
+        "galleryOpacity": "0.50125"
+      },
+      "before": {
+        "chapter": 4,
+        "p": 0.9936250000012414,
+        "camera": [
+          0,
+          4.898587196589413e-16,
+          8
+        ],
+        "position": [
+          0.7138821629544061,
+          -0.16527725437903945,
+          0
+        ],
+        "scale": 3.082046549559331,
+        "rotation": 0,
+        "alpha": 0,
+        "blocks": 0,
+        "photo": 0.00012140370698399128,
+        "time": 80424.19999999925,
+        "scroll": 4000,
+        "galleryOpacity": "0.000121404"
+      },
+      "end": {
+        "chapter": 4,
+        "p": 1,
+        "camera": [
+          0,
+          4.898587196589413e-16,
+          8
+        ],
+        "position": [
+          0.7139977389174496,
+          -0.16527725437903945,
+          0
+        ],
+        "scale": 3.0820933217536473,
+        "rotation": 0,
+        "alpha": 0,
+        "blocks": 0,
+        "photo": 0,
+        "time": 80452.89999999851,
+        "scroll": 4000,
+        "galleryOpacity": "0"
+      },
+      "settled": {
+        "chapter": 4,
+        "p": 1,
+        "camera": [
+          0,
+          4.898587196589413e-16,
+          8
+        ],
+        "position": [
+          0.7139977389174496,
+          -0.16527725437903945,
+          0
+        ],
+        "scale": 3.0820933217536473,
+        "rotation": 0,
+        "alpha": 0,
+        "blocks": 0,
+        "photo": 0,
+        "time": 81065.59999999776,
+        "scroll": 4000,
+        "galleryOpacity": "0"
+      },
+      "endpointDelta": {
+        "position": 0.00011557596304345719,
+        "scale": 0.00004677219431625801,
+        "camera": 0,
+        "alpha": 0
+      }
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "start": {
+        "chapter": 5,
+        "p": 0,
+        "camera": [
+          0,
+          4.898587196589413e-16,
+          8
+        ],
+        "position": [
+          0.7139977389174496,
+          -0.16527725437903945,
+          0
+        ],
+        "scale": 3.0820933217536473,
+        "rotation": 0,
+        "alpha": 0,
+        "blocks": 0,
+        "photo": 0,
+        "time": 83969.19999999925,
+        "scroll": 5000,
+        "galleryOpacity": "0"
+      },
+      "middle": {
+        "chapter": 5,
+        "p": 0.500791666667606,
+        "camera": [
+          0,
+          4.898587196589413e-16,
+          8
+        ],
+        "position": [
+          0.7139977389174496,
+          -0.16527725437903945,
+          0
+        ],
+        "scale": 3.0820933217536473,
+        "rotation": 0,
+        "alpha": 0.5011874990090769,
+        "blocks": 0,
+        "photo": 0,
+        "time": 85171.39999999851,
+        "scroll": 5000,
+        "galleryOpacity": "0"
+      },
+      "before": {
+        "chapter": 5,
+        "p": 0.8219583333330327,
+        "camera": [
+          0,
+          4.898587196589413e-16,
+          8
+        ],
+        "position": [
+          0.7139977389174496,
+          -0.16527725437903945,
+          0
+        ],
+        "scale": 3.0820933217536473,
+        "rotation": 0,
+        "alpha": 0.916190921645714,
+        "blocks": 0,
+        "photo": 0,
+        "time": 85942,
+        "scroll": 5000,
+        "galleryOpacity": "0"
+      },
+      "end": {
+        "chapter": 5,
+        "p": 1,
+        "camera": [
+          0,
+          4.898587196589413e-16,
+          8
+        ],
+        "position": [
+          0.7139977389174496,
+          -0.16527725437903945,
+          0
+        ],
+        "scale": 3.0820933217536473,
+        "rotation": 0.0032500000000000003,
+        "alpha": 1,
+        "blocks": 0,
+        "photo": 0,
+        "time": 86434.5,
+        "scroll": 5000,
+        "galleryOpacity": "0"
+      },
+      "settled": {
+        "chapter": 5,
+        "p": 1,
+        "camera": [
+          0,
+          4.898587196589413e-16,
+          8
+        ],
+        "position": [
+          0.7139977389174496,
+          -0.16527725437903945,
+          0
+        ],
+        "scale": 3.0820933217536473,
+        "rotation": 0.03421600000038743,
+        "alpha": 1,
+        "blocks": 0,
+        "photo": 0,
+        "time": 88717.19999999925,
+        "scroll": 5000,
+        "galleryOpacity": "0"
+      },
+      "endpointDelta": {
+        "position": 0,
+        "scale": 0,
+        "camera": 0,
+        "alpha": 0.08380907835428597
+      }
+    },
+    {
+      "from": 5,
+      "to": 0,
+      "start": {
+        "chapter": 0,
+        "p": 0,
+        "camera": [
+          0,
+          4.898587196589413e-16,
+          8
+        ],
+        "position": [
+          0.7139977389174496,
+          -0.16527725437903945,
+          0
+        ],
+        "scale": 3.0820933217536473,
+        "rotation": 0.0801645000002906,
+        "alpha": 1,
+        "blocks": 0,
+        "photo": 0,
+        "time": 91839.5,
+        "scroll": 0,
+        "galleryOpacity": "0"
+      },
+      "middle": {
+        "chapter": 0,
+        "p": 0.4536666666669831,
+        "camera": [
+          0,
+          4.898587196589413e-16,
+          8
+        ],
+        "position": [
+          0.7139977389174496,
+          -0.16527725437903945,
+          0
+        ],
+        "scale": 3.0820933217536473,
+        "rotation": 0.04563773524610361,
+        "alpha": 1,
+        "blocks": 0,
+        "photo": 0,
+        "time": 92927.89999999851,
+        "scroll": 0,
+        "galleryOpacity": "0"
+      },
+      "before": {
+        "chapter": 0,
+        "p": 0.9302916666663623,
+        "camera": [
+          0,
+          4.898587196589413e-16,
+          8
+        ],
+        "position": [
+          0.7139977389174496,
+          -0.16527725437903945,
+          0
+        ],
+        "scale": 3.0820933217536473,
+        "rotation": 0.0011143101607667544,
+        "alpha": 1,
+        "blocks": 0,
+        "photo": 0,
+        "time": 94071.79999999702,
+        "scroll": 0,
+        "galleryOpacity": "0"
+      },
+      "end": {
+        "chapter": 0,
+        "p": 1,
+        "camera": [
+          0,
+          4.898587196589413e-16,
+          8
+        ],
+        "position": [
+          0.7139977389174496,
+          -0.16527725437903945,
+          0
+        ],
+        "scale": 3.0820933217536473,
+        "rotation": 0.004364310160766755,
+        "alpha": 1,
+        "blocks": 0,
+        "photo": 0,
+        "time": 94278.39999999851,
+        "scroll": 0,
+        "galleryOpacity": "0"
+      },
+      "settled": {
+        "chapter": 0,
+        "p": 1,
+        "camera": [
+          0,
+          4.898587196589413e-16,
+          8
+        ],
+        "position": [
+          0.7139977389174496,
+          -0.16527725437903945,
+          0
+        ],
+        "scale": 3.0820933217536473,
+        "rotation": 0.029603810160815182,
+        "alpha": 1,
+        "blocks": 0,
+        "photo": 0,
+        "time": 96366.09999999776,
+        "scroll": 0,
+        "galleryOpacity": "0"
+      },
+      "endpointDelta": {
+        "position": 0,
+        "scale": 0,
+        "camera": 0,
+        "alpha": 0
+      }
+    },
+    {
+      "from": 3,
+      "to": 2,
+      "start": {
+        "chapter": 2,
+        "p": 0,
+        "camera": [
+          0,
+          4.898587196589413e-16,
+          8
+        ],
+        "position": [
+          -0.23799924630581681,
+          -0.16527725437903945,
+          0
+        ],
+        "scale": 2.6968316565344415,
+        "rotation": 0,
+        "alpha": 0,
+        "blocks": 0,
+        "photo": 1,
+        "time": 99838.5,
+        "scroll": 2000,
+        "galleryOpacity": "1"
+      },
+      "middle": {
+        "chapter": 2,
+        "p": 0.540375000000933,
+        "camera": [
+          0,
+          4.898587196589413e-16,
+          8
+        ],
+        "position": [
+          0.29552924869116426,
+          -0.16527725437903945,
+          0
+        ],
+        "scale": 2.9127441852660607,
+        "rotation": 0,
+        "alpha": 0.5604308661459215,
+        "blocks": 0,
+        "photo": 0.4395691338540785,
+        "time": 101135.5,
+        "scroll": 2000,
+        "galleryOpacity": "0.439569"
+      },
+      "before": {
+        "chapter": 2,
+        "p": 0.9648750000012404,
+        "camera": [
+          0,
+          4.898587196589413e-16,
+          8
+        ],
+        "position": [
+          0.7105566269674448,
+          -0.16527725437903945,
+          0
+        ],
+        "scale": 3.0807007453688033,
+        "rotation": 0,
+        "alpha": 0.9963853751604085,
+        "blocks": 0,
+        "photo": 0.003614624839591518,
+        "time": 102154.29999999702,
+        "scroll": 2000,
+        "galleryOpacity": "0.00361462"
+      },
+      "end": {
+        "chapter": 2,
+        "p": 1,
+        "camera": [
+          0,
+          4.898587196589413e-16,
+          8
+        ],
+        "position": [
+          0.7139977389174496,
+          -0.16527725437903945,
+          0
+        ],
+        "scale": 3.0820933217536473,
+        "rotation": 0.0032500000000000003,
+        "alpha": 1,
+        "blocks": 0,
+        "photo": 0,
+        "time": 102866.59999999776,
+        "scroll": 2000,
+        "galleryOpacity": "0"
+      },
+      "settled": {
+        "chapter": 2,
+        "p": 1,
+        "camera": [
+          0,
+          4.898587196589413e-16,
+          8
+        ],
+        "position": [
+          0.7139977389174496,
+          -0.16527725437903945,
+          0
+        ],
+        "scale": 3.0820933217536473,
+        "rotation": 0.023439000000096858,
+        "alpha": 1,
+        "blocks": 0,
+        "photo": 0,
+        "time": 104470.89999999851,
+        "scroll": 2000,
+        "galleryOpacity": "0"
+      },
+      "endpointDelta": {
+        "position": 0.0034411119500047382,
+        "scale": 0.0013925763848439132,
+        "camera": 0,
+        "alpha": 0.003614624839591518
+      }
+    },
+    {
+      "from": 2,
+      "to": 1,
+      "start": {
+        "chapter": 1,
+        "p": 0,
+        "camera": [
+          0,
+          4.898587196589413e-16,
+          8
+        ],
+        "position": [
+          0.7139977389174496,
+          -0.16527725437903945,
+          0
+        ],
+        "scale": 3.0820933217536473,
+        "rotation": 0.07059000000000003,
+        "alpha": 1,
+        "blocks": 0,
+        "photo": 0,
+        "time": 107534.5,
+        "scroll": 1000,
+        "galleryOpacity": "0"
+      },
+      "middle": {
+        "chapter": 1,
+        "p": 0.5847499999993863,
+        "camera": [
+          0,
+          4.898587196589413e-16,
+          8
+        ],
+        "position": [
+          -0.5273816486083056,
+          -0.16527725437903945,
+          0
+        ],
+        "scale": 3.0820933217536473,
+        "rotation": 0.02640718564628844,
+        "alpha": 0.37409244434464417,
+        "blocks": 0.6259075556553558,
+        "photo": 0,
+        "time": 108937.89999999851,
+        "scroll": 1000,
+        "galleryOpacity": "0"
+      },
+      "before": {
+        "chapter": 1,
+        "p": 0.904291666665434,
+        "camera": [
+          0,
+          4.898587196589413e-16,
+          8
+        ],
+        "position": [
+          -1.2183045317363572,
+          -0.16527725437903945,
+          0
+        ],
+        "scale": 3.0820933217536473,
+        "rotation": 0.0018160592068343917,
+        "alpha": 0.025726862258597327,
+        "blocks": 0.9742731377414027,
+        "photo": 0,
+        "time": 109704.89999999851,
+        "scroll": 1000,
+        "galleryOpacity": "0"
+      },
+      "end": {
+        "chapter": 1,
+        "p": 1,
+        "camera": [
+          0,
+          4.898587196589413e-16,
+          8
+        ],
+        "position": [
+          -1.2693293136310217,
+          -0.16527725437903945,
+          0
+        ],
+        "scale": 3.0820933217536473,
+        "rotation": 0,
+        "alpha": 0,
+        "blocks": 1,
+        "photo": 0,
+        "time": 110110.59999999776,
+        "scroll": 1000,
+        "galleryOpacity": "0"
+      },
+      "settled": {
+        "chapter": 1,
+        "p": 1,
+        "camera": [
+          0,
+          4.898587196589413e-16,
+          8
+        ],
+        "position": [
+          -1.2693293136310217,
+          -0.16527725437903945,
+          0
+        ],
+        "scale": 3.0820933217536473,
+        "rotation": 0,
+        "alpha": 0,
+        "blocks": 1,
+        "photo": 0,
+        "time": 112480.19999999925,
+        "scroll": 1000,
+        "galleryOpacity": "0"
+      },
+      "endpointDelta": {
+        "position": 0.05102478189466453,
+        "scale": 0,
+        "camera": 0,
+        "alpha": 0.025726862258597327
+      }
+    },
+    {
+      "from": 1,
+      "to": 0,
+      "start": {
+        "chapter": 0,
+        "p": 0,
+        "camera": [
+          0,
+          4.898587196589413e-16,
+          8
+        ],
+        "position": [
+          -1.2693293136310217,
+          -0.16527725437903945,
+          0
+        ],
+        "scale": 3.0820933217536473,
+        "rotation": 0,
+        "alpha": 0,
+        "blocks": 1,
+        "photo": 0,
+        "time": 115544.09999999776,
+        "scroll": 0,
+        "galleryOpacity": "0"
+      },
+      "middle": {
+        "chapter": 0,
+        "p": 0.3654166666666647,
+        "camera": [
+          0,
+          4.898587196589413e-16,
+          8
+        ],
+        "position": [
+          -0.6683805662165908,
+          -0.16527725437903945,
+          0
+        ],
+        "scale": 3.0820933217536473,
+        "rotation": 0,
+        "alpha": 0.30300032798032134,
+        "blocks": 0.6969996720196787,
+        "photo": 0,
+        "time": 116420.79999999702,
+        "scroll": 0,
+        "galleryOpacity": "0"
+      },
+      "before": {
+        "chapter": 0,
+        "p": 0.8499999999999968,
+        "camera": [
+          0,
+          4.898587196589413e-16,
+          8
+        ],
+        "position": [
+          0.5935106204751245,
+          -0.16527725437903945,
+          0
+        ],
+        "scale": 3.0820933217536473,
+        "rotation": 0,
+        "alpha": 0.9392499999999975,
+        "blocks": 0.060750000000002524,
+        "photo": 0,
+        "time": 117583.89999999851,
+        "scroll": 0,
+        "galleryOpacity": "0"
+      },
+      "end": {
+        "chapter": 0,
+        "p": 1,
+        "camera": [
+          0,
+          4.898587196589413e-16,
+          8
+        ],
+        "position": [
+          0.7139977389174496,
+          -0.16527725437903945,
+          0
+        ],
+        "scale": 3.0820933217536473,
+        "rotation": 0.0032500000000000003,
+        "alpha": 1,
+        "blocks": 0,
+        "photo": 0,
+        "time": 117954.5,
+        "scroll": 0,
+        "galleryOpacity": "0"
+      },
+      "settled": {
+        "chapter": 0,
+        "p": 1,
+        "camera": [
+          0,
+          4.898587196589413e-16,
+          8
+        ],
+        "position": [
+          0.7139977389174496,
+          -0.16527725437903945,
+          0
+        ],
+        "scale": 3.0820933217536473,
+        "rotation": 0.03504799999995157,
+        "alpha": 1,
+        "blocks": 0,
+        "photo": 0,
+        "time": 120682,
+        "scroll": 0,
+        "galleryOpacity": "0"
+      },
+      "endpointDelta": {
+        "position": 0.12048711844232507,
+        "scale": 0,
+        "camera": 0,
+        "alpha": 0.060750000000002524
+      }
+    }
+  ]
+}

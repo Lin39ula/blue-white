@@ -1,0 +1,33 @@
+{
+  "checks": [
+    {
+      "name": "转场1导航状态",
+      "passed": true
+    },
+    {
+      "name": "转场2导航状态",
+      "passed": true
+    },
+    {
+      "name": "转场3导航状态",
+      "passed": true
+    },
+    {
+      "name": "默认滚轮推进主线",
+      "passed": true
+    },
+    {
+      "name": "观察模式缩放",
+      "passed": true,
+      "before": "0.000,2.000,8.000",
+      "after": "0.000,1.954,7.817"
+    }
+  ],
+  "errors": [],
+  "console": [
+    "[.WebGL-0x451400384e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x451400384e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x451400384e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x451400384e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+  ]
+}

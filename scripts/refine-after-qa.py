@@ -1,0 +1,11 @@
+from pathlib import Path
+p=Path('src/NarrativeScene.tsx');s=p.read_text('utf-8-sig');s=s.replace('chapter,start:0,from:current.current','chapter,start:0,elapsed:2.4,from:current.current');s=s.replace('m.start=clock.elapsedTime;m.done=false','m.start=clock.elapsedTime;m.elapsed=0;m.done=false');s=s.replace('const p=Math.min(1,(clock.elapsedTime-m.start)/duration);','m.elapsed+=Math.min(dt,.05);const p=Math.min(1,m.elapsed/duration);');p.write_text(s,'utf-8')
+p=Path('src/main.tsx');s=p.read_text('utf-8-sig');s=s.replace('<ModelBoundary>','<ModelBoundary key={diy?"diy":"original"}>');s=s.replace('<div className="workshop">','<div className="workshop" onScroll={e=>document.documentElement.style.setProperty("--workshop-scroll",e.currentTarget.scrollTop+"px")}>');s=s.replace('function enter(){V(false);','function enter(){document.documentElement.style.setProperty("--workshop-scroll","0px");V(false);');p.write_text(s,'utf-8')
+p=Path('src/Loading.tsx');s=p.read_text('utf-8-sig');s=s.replace("componentDidCatch(){window.dispatchEvent", "componentDidCatch(){document.documentElement.dataset.modelError='true';window.dispatchEvent");p.write_text(s,'utf-8')
+p=Path('scripts/cutouts.py');s=p.read_text('utf-8-sig');needle=" cv2.grabCut(cv2.cvtColor(rgb,cv2.COLOR_RGB2BGR)";before=""" if i==5:
+  # Independently label the two handle apertures. The broad body foreground seed must not fill them.
+  holes=[[(.366,.303),(.375,.290),(.398,.279),(.430,.274),(.433,.287),(.428,.309),(.414,.329),(.393,.341),(.372,.346),(.365,.330)],[(.552,.276),(.576,.277),(.599,.285),(.617,.300),(.625,.316),(.622,.341),(.608,.344),(.585,.333),(.569,.316),(.559,.295)]]
+  for hole in holes:
+   aperture=np.zeros((h,w),np.uint8);cv2.fillPoly(aperture,[np.array([(round(x*w),round(y*h)) for x,y in hole],np.int32)],255)
+   border=cv2.dilate(aperture,np.ones((7,7),np.uint8));mask[border>0]=cv2.GC_PR_BGD;mask[aperture>0]=cv2.GC_BGD
+""";s=s.replace(needle,before+needle);s=s.replace(" # Retain largest object, suppress detached dust/text."," if i==1:\n  # Uniform studio backdrop: color distance retains the dark cobalt edge that GrabCut removed.\n  bg=rgb[5,5].astype(float);alpha=np.where(np.max(np.abs(rgb.astype(float)-bg),axis=2)>22,255,0).astype('uint8')\n # Retain largest object, suppress detached dust/text.");p.write_text(s,'utf-8')

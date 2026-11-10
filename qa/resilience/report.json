@@ -1,0 +1,19 @@
+[
+  {
+    "name": "模型失败反馈",
+    "passed": true
+  },
+  {
+    "name": "图片失败反馈",
+    "passed": true
+  },
+  {
+    "name": "视频失败反馈",
+    "passed": true
+  },
+  {
+    "name": "原始 GLB 与展示副本完全一致",
+    "passed": true,
+    "hash": "246bbf37929a960a3caf4e2add5b4608799ad1accc2cfc6f234f06aad81c028b"
+  }
+]

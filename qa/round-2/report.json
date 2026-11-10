@@ -1,0 +1,111 @@
+{
+  "console": [
+    {
+      "type": "error",
+      "text": "Attempted to synchronously unmount a root while React was already rendering. React cannot finish unmounting the root until the current render has completed, which may lead to a race condition."
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0xbf400cae000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0xbf400cae000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0xbf400cae000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0xbf400cae000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+    },
+    {
+      "type": "warning",
+      "text": "%s\n\n%s\n An error occurred in the <div> component. Consider adding an error boundary to your tree to customize error handling behavior.\nVisit https://react.dev/link/error-boundaries to learn more about error boundaries."
+    }
+  ],
+  "errors": [
+    "Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node."
+  ],
+  "failed": [
+    {
+      "url": "http://127.0.0.1:5175/videos/%E7%82%BC%E6%B3%A5.mp4",
+      "error": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:5175/videos/%E5%A1%91%E5%BD%A2.mp4",
+      "error": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:5175/videos/%E4%BF%AE%E5%9D%AF.mp4",
+      "error": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:5175/videos/%E5%A1%91%E5%BD%A2.mp4",
+      "error": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:5175/videos/%E7%82%BC%E6%B3%A5.mp4",
+      "error": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:5175/videos/%E7%BB%98%E9%9D%92%E8%8A%B1.mp4",
+      "error": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:5175/videos/%E4%B8%8A%E9%80%8F%E6%98%8E%E9%87%89.mp4",
+      "error": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:5175/videos/%E7%BB%98%E9%9D%92%E8%8A%B1.mp4",
+      "error": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:5175/videos/%E4%BF%AE%E5%9D%AF.mp4",
+      "error": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:5175/videos/%E7%83%A7%E5%88%B6.mp4",
+      "error": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:5175/videos/%E4%B8%8A%E9%80%8F%E6%98%8E%E9%87%89.mp4",
+      "error": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:5175/videos/%E7%83%A7%E5%88%B6.mp4",
+      "error": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "name": "webgl",
+      "value": 1
+    }
+  ]
+}

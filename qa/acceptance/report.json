@@ -1,0 +1,39 @@
+{
+  "checks": [
+    {
+      "name": "WebGL 初始化",
+      "passed": true
+    },
+    {
+      "name": "模型拖动",
+      "passed": true
+    }
+  ],
+  "errors": [
+    "locator.click: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.material button').nth(1)\u001b[22m\n\n    at D:\\projects\\Competition\\name\\scripts\\acceptance.mjs:6:56"
+  ],
+  "console": [
+    {
+      "type": "warning",
+      "text": "[.WebGL-0xc5c00cbce00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0xc5c00cbce00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0xc5c00cbce00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0xc5c00cbce00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0xc5c00cbce00] GL_INVALID_OPERATION: glBlitFramebuffer: Blit feedback loop: the read and draw framebuffers are the same."
+    }
+  ],
+  "resources": [],
+  "video": []
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "id": 0,
+    "original": "public\\images\\artifacts\\0.png",
+    "output": "public\\images\\cutouts\\0.png",
+    "crop": [
+      306,
+      74,
+      767,
+      994
+    ],
+    "method": "manual silhouette constraints + GrabCut, original RGB pixels, 0.55px alpha antialias"
+  },
+  {
+    "id": 1,
+    "original": "public\\images\\artifacts\\1.jpg",
+    "output": "public\\images\\cutouts\\1.png",
+    "crop": [
+      170,
+      30,
+      527,
+      656
+    ],
+    "method": "manual silhouette constraints + GrabCut, original RGB pixels, 0.55px alpha antialias"
+  },
+  {
+    "id": 2,
+    "original": "public\\images\\artifacts\\2.jpg",
+    "output": "public\\images\\cutouts\\2.png",
+    "crop": [
+      137,
+      239,
+      684,
+      935
+    ],
+    "method": "manual silhouette constraints + GrabCut, original RGB pixels, 0.55px alpha antialias"
+  },
+  {
+    "id": 3,
+    "original": "public\\images\\artifacts\\3.jpg",
+    "output": "public\\images\\cutouts\\3.png",
+    "crop": [
+      136,
+      227,
+      944,
+      456
+    ],
+    "method": "manual silhouette constraints + GrabCut, original RGB pixels, 0.55px alpha antialias"
+  },
+  {
+    "id": 4,
+    "original": "public\\images\\artifacts\\4.png",
+    "output": "public\\images\\cutouts\\4.png",
+    "crop": [
+      75,
+      57,
+      388,
+      621
+    ],
+    "method": "manual silhouette constraints + GrabCut, original RGB pixels, 0.55px alpha antialias"
+  },
+  {
+    "id": 5,
+    "original": "public\\images\\artifacts\\5.jpg",
+    "output": "public\\images\\cutouts\\5.png",
+    "crop": [
+      113,
+      200,
+      1061,
+      1358
+    ],
+    "method": "manual silhouette constraints + GrabCut, original RGB pixels, 0.55px alpha antialias"
+  },
+  {
+    "id": 6,
+    "original": "public\\images\\artifacts\\6.jpg",
+    "output": "public\\images\\cutouts\\6.png",
+    "crop": [
+      85,
+      68,
+      258,
+      375
+    ],
+    "method": "manual silhouette constraints + GrabCut, original RGB pixels, 0.55px alpha antialias"
+  },
+  {
+    "id": 7,
+    "original": "public\\images\\artifacts\\7.jpg",
+    "output": "public\\images\\cutouts\\7.png",
+    "crop": [
+      247,
+      181,
+      596,
+      979
+    ],
+    "method": "manual silhouette constraints + GrabCut, original RGB pixels, 0.55px alpha antialias"
+  }
+]
