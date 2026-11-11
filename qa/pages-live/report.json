@@ -1,0 +1,117 @@
+{
+  "url": "https://lin39ula.github.io/blue-white/",
+  "browser": "129.0.6668.100",
+  "checks": [
+    {
+      "name": "live adaptive UI",
+      "pass": true
+    },
+    {
+      "name": "live defaults standard or lite",
+      "pass": true
+    },
+    {
+      "name": "live lite model loaded",
+      "pass": true
+    },
+    {
+      "name": "live chapter 2",
+      "pass": true
+    },
+    {
+      "name": "live chapter 3",
+      "pass": true
+    },
+    {
+      "name": "live chapter 4",
+      "pass": true
+    },
+    {
+      "name": "live chapter 5",
+      "pass": true
+    },
+    {
+      "name": "live video 1",
+      "pass": true
+    },
+    {
+      "name": "live video 2",
+      "pass": true
+    },
+    {
+      "name": "live video 3",
+      "pass": true
+    },
+    {
+      "name": "live video 4",
+      "pass": true
+    },
+    {
+      "name": "live video 5",
+      "pass": true
+    },
+    {
+      "name": "live video 6",
+      "pass": true
+    },
+    {
+      "name": "live original exhibit restored",
+      "pass": true
+    },
+    {
+      "name": "1024 quality controls separated",
+      "pass": true,
+      "detail": {
+        "overlap": false,
+        "a": {
+          "x": 651.1771240234375,
+          "y": 116,
+          "width": 192.6666717529297,
+          "height": 44,
+          "top": 116,
+          "right": 843.8437957763672,
+          "bottom": 160,
+          "left": 651.1771240234375
+        },
+        "b": {
+          "x": 831.8958740234375,
+          "y": 174,
+          "width": 130.6666717529297,
+          "height": 49,
+          "top": 174,
+          "right": 962.5625457763672,
+          "bottom": 223,
+          "left": 831.8958740234375
+        }
+      }
+    },
+    {
+      "name": "live mobile quality switch",
+      "pass": true
+    },
+    {
+      "name": "live no original automatic download",
+      "pass": true
+    },
+    {
+      "name": "live no page errors",
+      "pass": true
+    },
+    {
+      "name": "live no console errors",
+      "pass": true
+    },
+    {
+      "name": "live no HTTP errors",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "consoleErrors": [],
+  "http": [],
+  "models": [
+    "https://lin39ula.github.io/blue-white/models/vase-lite.glb",
+    "https://lin39ula.github.io/blue-white/models/vase-lite.glb",
+    "https://lin39ula.github.io/blue-white/models/vase-standard.glb"
+  ]
+}
