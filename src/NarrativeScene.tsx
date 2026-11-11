@@ -9,8 +9,9 @@ const smooth=(t:number)=>t*t*(3-2*t);
 const mix=(a:Pose,b:Pose,t:number)=>Object.fromEntries(Object.keys(a).map(k=>[k,a[k as keyof Pose]+(b[k as keyof Pose]-a[k as keyof Pose])*t])) as Pose;
 function goal(ch:number,mobile:boolean):Pose {return {x:ch===1?.34:ch===3?(mobile?.30:.47):(mobile?.55:[0,5].includes(ch)?.73:.59),y:mobile?(ch===1?.43:ch===3?.57:[0,5].includes(ch)?.75:.64):.53,h:ch===3?(mobile?.35:.56):(mobile?([0,5].includes(ch)?.26:.38):.64),alpha:[1,4].includes(ch)?0:ch===3?0:1,blocks:ch===1?1:0,spread:ch===1?1:0,photo:ch===3?1:0,angle:0};}
 function grain(cobalt:boolean){const c=document.createElement('canvas');c.width=c.height=256;const ctx=c.getContext('2d')!;let seed=42;const rand=()=>{seed=(seed*1664525+1013904223)>>>0;return seed/4294967296};const d=ctx.createImageData(256,256);for(let i=0;i<d.data.length;i+=4){const n=rand(),cloud=Math.sin(i/4%256*.06)*Math.cos(Math.floor(i/1024)*.05)*.12;const v=.65+n*.35+cloud;d.data[i]=(cobalt?19:223)*v;d.data[i+1]=(cobalt?48:213)*v;d.data[i+2]=(cobalt?88:190)*v;d.data[i+3]=255;}ctx.putImageData(d,0,0);const t=new CanvasTexture(c);t.colorSpace=SRGBColorSpace;return t;}
-export function NarrativeScene({chapter,selected,onSelect,onSettled}:{chapter:number;selected:number;onSelect:(i:number)=>void;onSettled:()=>void}){
- const {scene}=useGLTF(asset('/模型.glb'));const {camera,size,viewport}=useThree();
+export function NarrativeScene({url,onReady,chapter,selected,onSelect,onSettled}:{url:string;onReady:()=>void;chapter:number;selected:number;onSelect:(i:number)=>void;onSettled:()=>void}){
+ const {scene}=useGLTF(url);const {camera,size,viewport}=useThree();
+ useEffect(()=>{onReady();return()=>useGLTF.clear(url)},[url]);
  const original=useMemo(()=>{const copy=scene.clone(true);copy.traverse(o=>{if(o instanceof Mesh){o.material=Array.isArray(o.material)?o.material.map(m=>m.clone()):o.material.clone();}});return copy},[scene]);
  const textures=useMemo(()=>[grain(false),grain(true)],[]);useEffect(()=>()=>{textures.forEach(t=>t.dispose());original.traverse(o=>{if(o instanceof Mesh)(Array.isArray(o.material)?o.material:[o.material]).forEach(m=>m.dispose())})},[original,textures]);
  const vase=useRef<Group>(null),blocks=useRef<Group>(null);const hover=useRef(-1);const current=useRef(chapter===0?{...goal(chapter,size.width<800),x:.5,h:size.width<800?.8:1.35,alpha:0,angle:-.65}:goal(chapter,size.width<800));const motion=useRef({chapter,start:0,elapsed:chapter===0?0:2.4,from:current.current,via:null as Pose|null,done:false});
@@ -26,7 +27,7 @@ export function NarrativeScene({chapter,selected,onSelect,onSettled}:{chapter:nu
   const duration=window.matchMedia('(prefers-reduced-motion: reduce)').matches?.05:chapter===0?5.5:chapter===2?3.2:2.4;
   m.elapsed+=Math.min(dt,.05);const p=Math.min(1,m.elapsed/duration);
   let value=m.via?(p<.45?mix(m.from,m.via,smooth(p/.45)):mix(m.via,target,smooth((p-.45)/.55))):mix(m.from,target,smooth(p));
-  if(p>=1&&[0,2,5].includes(chapter))value.angle=current.current.angle+Math.min(dt,.05)*.065;
+  if(p>=1&&!window.matchMedia('(prefers-reduced-motion: reduce)').matches&&[0,2,5].includes(chapter))value.angle=current.current.angle+Math.min(dt,.05)*.065;
   current.current=value;
   const v=viewport.getCurrentViewport(camera);vase.current.position.set((value.x-.5)*v.width,(.5-value.y)*v.height,0);vase.current.scale.setScalar(value.h*v.height/1.144);vase.current.rotation.y=value.angle;
   vase.current.visible=value.alpha>.001;original.traverse(o=>{if(o instanceof Mesh)(Array.isArray(o.material)?o.material:[o.material]).forEach(mat=>{const mm=mat as MeshStandardMaterial;mm.transparent=value.alpha<.999;mm.opacity=value.alpha;mm.depthWrite=value.alpha>.98;})});

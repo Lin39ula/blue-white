@@ -1,0 +1,108 @@
+{
+  "source": {
+    "path": "public/模型.glb",
+    "sha256": "246bbf37929a960a3caf4e2add5b4608799ad1accc2cfc6f234f06aad81c028b",
+    "bytes": 78985560,
+    "triangles": 1500000,
+    "textures": [
+      {
+        "name": "texture_pbr_20250901_normal",
+        "size": [
+          4096,
+          4096
+        ],
+        "mime": "image/png"
+      },
+      {
+        "name": "texture_pbr_20250901",
+        "size": [
+          4096,
+          4096
+        ],
+        "mime": "image/png"
+      },
+      {
+        "name": "texture_pbr_20250901_metallic-texture_pbr_20250901_roughness",
+        "size": [
+          4096,
+          4096
+        ],
+        "mime": "image/png"
+      }
+    ]
+  },
+  "variants": [
+    {
+      "name": "standard",
+      "ratio": 0.1,
+      "error": 0.0007,
+      "size": 2048,
+      "quality": 88,
+      "path": "public/models/vase-standard.glb",
+      "bytes": 5499372,
+      "triangles": 150000,
+      "textures": [
+        {
+          "name": "texture_pbr_20250901_normal",
+          "size": [
+            2048,
+            2048
+          ],
+          "mime": "image/png"
+        },
+        {
+          "name": "texture_pbr_20250901",
+          "size": [
+            2048,
+            2048
+          ],
+          "mime": "image/webp"
+        },
+        {
+          "name": "texture_pbr_20250901_metallic-texture_pbr_20250901_roughness",
+          "size": [
+            2048,
+            2048
+          ],
+          "mime": "image/webp"
+        }
+      ]
+    },
+    {
+      "name": "lite",
+      "ratio": 0.025,
+      "error": 0.002,
+      "size": 1024,
+      "quality": 82,
+      "path": "public/models/vase-lite.glb",
+      "bytes": 1602552,
+      "triangles": 37500,
+      "textures": [
+        {
+          "name": "texture_pbr_20250901_normal",
+          "size": [
+            1024,
+            1024
+          ],
+          "mime": "image/png"
+        },
+        {
+          "name": "texture_pbr_20250901",
+          "size": [
+            1024,
+            1024
+          ],
+          "mime": "image/webp"
+        },
+        {
+          "name": "texture_pbr_20250901_metallic-texture_pbr_20250901_roughness",
+          "size": [
+            1024,
+            1024
+          ],
+          "mime": "image/webp"
+        }
+      ]
+    }
+  ]
+}

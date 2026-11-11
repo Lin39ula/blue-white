@@ -21,7 +21,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          lfs: true
+          lfs: false
+
+      - name: Download published media
+        run: git lfs pull --include="public/模型.glb,public/models/*.glb,public/videos/web/*.mp4" --exclude=""
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -33,7 +36,9 @@ jobs:
         run: npm ci
 
       - name: Build site
-        run: npm run build
+        run: |
+          npm run build
+          node scripts/verify-published-assets.mjs
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

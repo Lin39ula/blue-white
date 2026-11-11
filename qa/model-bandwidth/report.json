@@ -1,0 +1,77 @@
+{
+  "browser": "129.0.6668.100",
+  "base": "http://127.0.0.1:5189/blue-white/",
+  "checks": [
+    {
+      "name": "automatic standard",
+      "pass": true
+    },
+    {
+      "name": "lite ready",
+      "pass": true
+    },
+    {
+      "name": "standard ready",
+      "pass": true
+    },
+    {
+      "name": "original ready",
+      "pass": true
+    },
+    {
+      "name": "mobile selector reachable",
+      "pass": true
+    },
+    {
+      "name": "save-data directly loads lite",
+      "pass": true,
+      "detail": [
+        "http://127.0.0.1:5189/blue-white/models/vase-lite.glb"
+      ]
+    },
+    {
+      "name": "128 KiB/s automatically switches to lite",
+      "pass": true,
+      "detail": [
+        "http://127.0.0.1:5189/blue-white/models/vase-standard.glb",
+        "http://127.0.0.1:5189/blue-white/models/vase-lite.glb",
+        "http://127.0.0.1:5189/blue-white/%E6%A8%A1%E5%9E%8B.glb"
+      ]
+    },
+    {
+      "name": "manual original is not auto-downgraded",
+      "pass": true
+    },
+    {
+      "name": "no normal page errors",
+      "pass": true
+    },
+    {
+      "name": "no normal HTTP errors",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "http": [],
+  "requests": [
+    "http://127.0.0.1:5189/blue-white/models/vase-standard.glb",
+    "http://127.0.0.1:5189/blue-white/models/vase-lite.glb",
+    "http://127.0.0.1:5189/blue-white/models/vase-standard.glb",
+    "http://127.0.0.1:5189/blue-white/%E6%A8%A1%E5%9E%8B.glb",
+    "http://127.0.0.1:5189/blue-white/models/vase-lite.glb"
+  ],
+  "timing": {
+    "lite": {
+      "loadMs": 1180,
+      "frameMs": 50.09999999999991
+    },
+    "standard": {
+      "loadMs": 1057,
+      "frameMs": 83.30000000000018
+    },
+    "original": {
+      "loadMs": 2530,
+      "frameMs": 216.6999999999989
+    }
+  }
+}
