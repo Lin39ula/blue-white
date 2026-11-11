@@ -5,7 +5,9 @@ import {MeshoptEncoder,MeshoptDecoder,MeshoptSimplifier} from 'meshoptimizer';
 import sharp from 'sharp';import fs from 'node:fs';import crypto from 'node:crypto';
 await Promise.all([MeshoptEncoder.ready,MeshoptDecoder.ready,MeshoptSimplifier.ready]);
 const io=new NodeIO().registerExtensions(ALL_EXTENSIONS).registerDependencies({'meshopt.encoder':MeshoptEncoder,'meshopt.decoder':MeshoptDecoder});
-const original='public/模型.glb';const digest=()=>crypto.createHash('sha256').update(fs.readFileSync(original)).digest('hex');const hash=digest();
+const original=process.argv[2];
+if(!original||!fs.existsSync(original))throw Error('请提供仓库外的原始 GLB：node scripts/optimize-model.mjs <source.glb>');
+const digest=()=>crypto.createHash('sha256').update(fs.readFileSync(original)).digest('hex');const hash=digest();
 const stats=doc=>({triangles:doc.getRoot().listMeshes().reduce((s,m)=>s+m.listPrimitives().reduce((n,p)=>n+(p.getIndices()?.getCount()||p.getAttribute('POSITION').getCount())/3,0),0),textures:doc.getRoot().listTextures().map(t=>({name:t.getName(),size:t.getSize(),mime:t.getMimeType()}))});
 fs.mkdirSync('public/models',{recursive:true});const report={source:{path:original,sha256:hash,bytes:fs.statSync(original).size,...stats(await io.read(original))},variants:[]};
 for(const opt of [{name:'standard',ratio:.10,error:.0007,size:2048,quality:88},{name:'lite',ratio:.025,error:.002,size:1024,quality:82}]){

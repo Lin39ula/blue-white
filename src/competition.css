@@ -45,6 +45,7 @@ footer{font-size:12px;letter-spacing:.08em;color:#b4c7d3}
 section footer{z-index:7}
 .quality-control{position:absolute;right:6%;top:112px;z-index:9;pointer-events:auto;font-size:11px;color:#bdccd6}
 .quality-control>span{display:block;margin-bottom:3px;letter-spacing:1px}.quality-control select{display:block;margin:0;padding:7px 10px;min-height:32px;background:#102431;border-color:#576e7f;font-size:11px;max-width:155px}
+.quality-control option[value="original"]{display:none}
 @media(max-width:800px){.quality-control{top:auto;bottom:66px;right:6%}.quality-control>span{display:none}.quality-control select{min-height:38px}}
 
 html{overflow-anchor:none}

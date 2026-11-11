@@ -3,8 +3,9 @@ import { cpSync, mkdirSync } from 'node:fs';
 import { resolve, relative } from 'node:path';
 
 export default defineConfig({
-  base: '/blue-white/',
-  // Keep camera originals in the workspace; publish only the web video editions.
+  // Cloudflare Pages uses the site root. GitHub Pages overrides this in its workflow.
+  base: process.env.VITE_BASE || '/',
+  // Publish only web-ready media editions.
   plugins: [{
     name: 'publish-web-media',
     config: (_, { command }) => command === 'build' ? { publicDir: false } : {},

@@ -1,14 +1,15 @@
 {
-  "generatedAt": "2026-11-11T10:05:42.794Z",
-  "publishedMiB": 110.14226913452148,
+  "generatedAt": "2026-11-11T12:03:22.296Z",
+  "publishedMiB": 34.81607246398926,
   "checks": [
-    {
-      "name": "原始模型与发布模型一致",
-      "pass": true
-    },
     {
       "name": "两档独立轻量模型齐全",
       "pass": true
+    },
+    {
+      "name": "发布目录不含超过 25 MiB 的文件",
+      "pass": true,
+      "detail": []
     },
     {
       "name": "发布包排除原始视频",

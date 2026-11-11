@@ -1,14 +1,12 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import crypto from 'node:crypto';
 
 const walk = dir => fs.readdirSync(dir, {withFileTypes:true}).flatMap(e => e.isDirectory()?walk(path.join(dir,e.name)):[path.join(dir,e.name)]);
-const hash = file => crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex');
 const files = walk('dist');
 const checks = [];
 const check=(name,pass,detail)=>checks.push({name,pass,detail});
-check('原始模型与发布模型一致', hash('模型.glb')===hash('public/模型.glb')&&hash('模型.glb')===hash('dist/模型.glb'));
 check('两档独立轻量模型齐全', ['lite','standard'].every(q=>fs.existsSync('dist/models/vase-'+q+'.glb')));
+check('发布目录不含超过 25 MiB 的文件', files.every(f=>fs.statSync(f).size<=25*1024*1024),files.filter(f=>fs.statSync(f).size>25*1024*1024));
 check('发布包排除原始视频', !files.some(f=>/^dist[\\/]videos[\\/][^\\/]+\.mp4$/.test(f)));
 check('六段网页视频齐全', files.filter(f=>/^dist[\\/]videos[\\/]web[\\/].+\.mp4$/.test(f)).length===6);
 const pointers=files.filter(f=>/\.(mp4|glb)$/.test(f)&&fs.statSync(f).size<1024).filter(f=>fs.readFileSync(f,'utf8').startsWith('version https://git-lfs.github.com/spec/v1'));

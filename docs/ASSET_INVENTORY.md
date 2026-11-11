@@ -1,21 +1,20 @@
 # 素材清单
 
 ## 核心模型
-原始文件：`模型.glb`，78,985,560 字节。展示副本：`public/模型.glb`。两者 SHA-256 相同：`246bbf37929a960a3caf4e2add5b4608799ad1accc2cfc6f234f06aad81c028b`。未修改几何、材质或贴图。
-约 794,987 顶点、1,500,000 三角形，含 UV、法线贴图、基础颜色和金属粗糙度贴图。GLB 结构见 model-inspection.json。
+高规格原始 GLB（78,985,560 字节）已移出部署仓库并应单独归档。为满足 Cloudflare Pages 单文件 25 MiB 限制，网页仅发布 `public/models/vase-standard.glb`（约 5.24 MiB）与 `public/models/vase-lite.glb`（约 1.53 MiB）；DIY 器物独立程序化生成。
 
 ## 视频
-六段原视频为 HEVC，当前 Chromium 无视频画面。已保留原件并生成 `public/videos/web` H.264/AAC 副本，最大宽度 640，faststart，保持原始比例。
+六段网页视频为 H.264/AAC 副本，最大宽度 640，faststart，保持原始比例。高码率原始视频移至仓库外归档。
 已抽取并检查 10 秒处画面；内容与以下工序一致。
 
 |工序|原文件|兼容副本字节|
 |---|---|---|
-|练泥|videos/炼泥.mp4|6324449|
-|成型|videos/塑形.mp4|4138698|
-|修坯|videos/修坯.mp4|1483128|
-|绘青花|videos/绘青花.mp4|1532648|
-|施釉|videos/上透明釉.mp4|681908|
-|烧制|videos/烧制.mp4|1280550|
+|练泥|`public/videos/web`|6324449|
+|成型|`public/videos/web`|4138698|
+|修坯|`public/videos/web`|1483128|
+|绘青花|`public/videos/web`|1532648|
+|施釉|`public/videos/web`|681908|
+|烧制|`public/videos/web`|1280550|
 
 ## 文物
 瓷器素材.zip 共八组文物图片与 DOCX 资料，已提取至 `public/images/artifacts` 与 `public/artifacts.json`。内容来源标为用户资料，不宣称独立核实。

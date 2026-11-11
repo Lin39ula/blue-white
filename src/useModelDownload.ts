@@ -1,13 +1,13 @@
 import {useEffect, useState} from 'react';
 import {asset} from './asset';
-export type ModelQuality='lite'|'standard'|'original';
+export type ModelQuality='lite'|'standard';
 type Mode=ModelQuality|'auto';
-const files:Record<ModelQuality,string>={lite:'/models/vase-lite.glb',standard:'/models/vase-standard.glb',original:'/模型.glb'};
+const files:Record<ModelQuality,string>={lite:'/models/vase-lite.glb',standard:'/models/vase-standard.glb'};
 function automaticQuality():ModelQuality {
  const connection=(navigator as Navigator & {connection?:{saveData?:boolean;effectiveType?:string;downlink?:number}}).connection;
  return connection&&(connection.saveData||['slow-2g','2g','3g'].includes(connection.effectiveType||'')||(connection.downlink!==undefined&&connection.downlink<1.5))?'lite':'standard';
 }
-function initial(){let mode:Mode='auto';try{const saved=sessionStorage.getItem('bw-model-mode');if(['auto','lite','standard','original'].includes(saved||''))mode=saved as Mode}catch{}return {mode,quality:mode==='auto'?automaticQuality():mode,attempt:0,adapted:false}}
+function initial(){let mode:Mode='auto';try{const saved=sessionStorage.getItem('bw-model-mode');if(['auto','lite','standard'].includes(saved||''))mode=saved as Mode}catch{}return {mode,quality:mode==='auto'?automaticQuality():mode,attempt:0,adapted:false}}
 export function useModelDownload() {
  const [request,setRequest]=useState(initial);
  const [state,setState]=useState({url:'',loaded:0,total:0,error:false});
@@ -37,6 +37,6 @@ export function useModelDownload() {
   }catch{clearInterval(slow);if(!abort.signal.aborted)setState(s=>({...s,error:true}))}}
   void download();return()=>{clearInterval(slow);abort.abort();if(url)URL.revokeObjectURL(url)};
  },[request.attempt,request.quality]);
- const select=(mode:Mode)=>{try{sessionStorage.setItem('bw-model-mode',mode)}catch{}setRequest(prev=>({...prev,mode,quality:mode==='auto'?automaticQuality():mode,attempt:prev.attempt+1,adapted:false}))};
+ const select=(mode:Mode)=>{const safeMode:Mode=['auto','lite','standard'].includes(mode)?mode:'auto';try{sessionStorage.setItem('bw-model-mode',safeMode)}catch{}setRequest(prev=>({...prev,mode:safeMode,quality:safeMode==='auto'?automaticQuality():safeMode,attempt:prev.attempt+1,adapted:false}))};
  return {...state,...request,select,retry:()=>setRequest(p=>({...p,attempt:p.attempt+1}))};
 }

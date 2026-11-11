@@ -24,7 +24,7 @@ jobs:
           lfs: false
 
       - name: Download published media
-        run: git lfs pull --include="public/模型.glb,public/models/*.glb,public/videos/web/*.mp4" --exclude=""
+        run: git lfs pull --include="public/models/*.glb,public/videos/web/*.mp4" --exclude=""
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -37,7 +37,7 @@ jobs:
 
       - name: Build site
         run: |
-          npm run build
+          VITE_BASE=/blue-white/ npm run build
           node scripts/verify-published-assets.mjs
 
       - name: Upload Pages artifact
