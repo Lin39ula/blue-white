@@ -48,3 +48,4 @@ section footer{z-index:7}
 @media(max-width:800px){.quality-control{top:auto;bottom:66px;right:6%}.quality-control>span{display:none}.quality-control select{min-height:38px}}
 
 html{overflow-anchor:none}
+@media(min-width:801px) and (max-width:1200px){.quality-control{top:174px}}
